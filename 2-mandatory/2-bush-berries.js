@@ -21,7 +21,14 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function bushChecker() {}
+function bushChecker(bushBerryColours) {
+  let condition = bushBerryColours.every((elem) => elem === "pink");
+  if (condition) {
+    return "Bush is safe to eat from";
+  } else {
+    return "Toxic! Leave bush alone!";
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

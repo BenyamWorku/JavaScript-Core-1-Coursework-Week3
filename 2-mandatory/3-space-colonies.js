@@ -15,7 +15,23 @@
   
 */
 
-function colonisers() {}
+// function colonisers(voyagers) {
+//   let newArray = [];
+//   for (elem of voyagers) {
+//     if (elem.includes("family") && elem[0] === "A") {
+//       newArray.push(elem);
+//     }
+//   }
+
+//   return newArray;
+// }
+
+function colonisers(voyagers) {
+  let familyStartsWithA = voyagers.filter(
+    (elem) => elem.includes("family") && elem[0] === "A"
+  );
+  return familyStartsWithA;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
