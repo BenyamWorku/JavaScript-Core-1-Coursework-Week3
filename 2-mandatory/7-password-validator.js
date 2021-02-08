@@ -40,6 +40,7 @@ function validatePasswords(passwords) {
   let re = new RegExp(
     /^.*(?=.{5,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).*$/
   );
+  // (pwd, i, a) is array destructuring
   return passwords.map((pwd, i, a) => re.test(pwd) && a.indexOf(pwd) === i);
 }
 /* ======= TESTS - DO NOT MODIFY ===== */
