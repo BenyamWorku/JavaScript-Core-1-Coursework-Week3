@@ -9,19 +9,15 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 function fizzBuzz(num) {
-  if (num < 3) {
-    console.log(num);
-  } else if (num % 3 === 0) {
-    console.log("Fizz");
-    if (num % 5 === 0) {
-      console.log("Buzz");
-    }
-  } else {
-    console.log(num);
-  }
+  if (num % 15 === 0) console.log("fizzBuzz");
+
+  else if (num % 3 === 0) console.log("fizz");
+  
+  else if (num % 5 === 0) console.log("Buzz");
+  else console.log(num);
+  
 }
 arr.forEach(fizzBuzz);
-
 /* EXPECTED OUTPUT */
 
 /*

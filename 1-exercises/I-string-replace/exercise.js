@@ -12,9 +12,11 @@
 
 let story =
   "I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
+let mapperObject = { dogs: "cats", day: "night", "10": "100000", great: "brilliant", }
 
-let result = story.replace("", "");
-
+let regex = /dogs|day|10|great/g;
+let result = story.replace(regex, (stringtoReplace) => mapperObject[stringtoReplace]);
+console.log(result);
 /* EXPECTED OUTPUT */
 
 const util = require("util");

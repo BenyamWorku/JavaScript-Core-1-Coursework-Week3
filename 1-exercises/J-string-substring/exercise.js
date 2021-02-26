@@ -5,13 +5,16 @@
 */
 
 let statement = "I like programming and dogs";
+// method 1
+let splitStatement = statement.split(" ").slice(0, 3).join(" ")
 
-statement = statement.substring();
+//method 2
+statement = statement.substring(0, statement.lastIndexOf("a"));
 
 console.log(statement);
 
-/* EXPECTED OUTPUT 
+/* EXPECTED OUTPUT
 
   "I like programming"
-  
+
 */
